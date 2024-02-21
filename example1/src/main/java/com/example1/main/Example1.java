@@ -19,6 +19,14 @@ public class Example1 {
 		var veh2 = context.getBean("vehicle2",Vehicle.class);
 		log.info("vehical Honda context name ::" + veh2.getName());
 		
+		
+		var veh3 = context.getBean("vehicle3",Vehicle.class);
+		log.info("vehical Maruti context name ::" + veh3.getName());
+		
+		var veh4 = context.getBean(Vehicle.class);
+		log.info("vehical Primary  context name ::" + veh4.getName());
+		
+		
 		var str= context.getBean(String.class);
 		
 		log.info("String beal :: "+str);

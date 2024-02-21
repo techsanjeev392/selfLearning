@@ -2,6 +2,7 @@ package com.sanjeev.example1.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 import com.sanjeev.example1.beans.Vehicle;
 
@@ -19,6 +20,14 @@ public class ProjectConfig {
 	Vehicle vehicle2() {
 		var veh = new Vehicle();
 		veh.setName("Honda");
+		return veh;
+	}
+	
+	@Bean
+	@Primary
+	Vehicle vehicle3() {
+		var veh = new Vehicle();
+		veh.setName("Maruti");
 		return veh;
 	}
 	
