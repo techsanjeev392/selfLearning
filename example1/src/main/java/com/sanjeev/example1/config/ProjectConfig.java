@@ -22,6 +22,12 @@ public class ProjectConfig {
 		veh.setName("Honda");
 		return veh;
 	}
+	@Bean(name ="cccccc")
+	Vehicle vehicle4() {
+		var veh = new Vehicle();
+		veh.setName("Honda");
+		return veh;
+	}
 	
 	@Bean
 	@Primary
