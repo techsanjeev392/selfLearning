@@ -31,7 +31,7 @@ public class Example1 {
 		
 		log.info("String beal :: "+str);
 		var int1 =context.getBean(int.class);
-		log.info("Int value from the Bean :: "+ int1);
+		log.info("Int value from the Bean ::ss "+ int1);
 		
 	}
 
